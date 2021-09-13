@@ -78,7 +78,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company)))
+   '(color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
+ '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -144,3 +145,57 @@
 (set-frame-font "Simsun 18")
 
 
+
+;解决emacs shell 乱码
+(setq ansi-color-for-comint-mode t)
+(customize-group 'ansi-colors)
+(kill-this-buffer);关闭customize窗口
+
+(setq visible-bell t);关闭出错时的提示声
+(setq make-backup-files nil);不产生备份文件
+(setq default-major-mode 'text-mode);一打开就起用 text 模式
+(global-font-lock-mode t);语法高亮
+(auto-image-file-mode t);打开图片显示功能
+(fset 'yes-or-no-p 'y-or-n-p);以 y/n代表 yes/no
+(column-number-mode t);显示列号
+(show-paren-mode t);显示括号匹配
+(display-time-mode 1);显示时间，格式如下
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(tool-bar-mode nil);去掉那个大大的工具栏
+(scroll-bar-mode nil);去掉滚动条
+;(mouse-avoidance-mode 'animate);光标靠近鼠标指针时，让鼠标指针自动让开
+(setq mouse-yank-at-point t);支持中键粘贴
+(transient-mark-mode t);允许临时设置标记
+(setq x-select-enable-clipboard t);支持emacs和外部程序的粘贴
+(setq frame-title-format '("" buffer-file-name "@emacs" ));在标题栏显示buffer名称
+(setq default-fill-column 80);默认显示 80列就换行 
+
+
+;鼠标滚轮，默认的滚动太快，这里改为3行
+(defun up-slightly () (interactive) (scroll-up 3))
+(defun down-slightly () (interactive) (scroll-down 3))
+(global-set-key [mouse-4] 'down-slightly)
+(global-set-key [mouse-5] 'up-slightly)
+
+
+
+
+;加入会话功能
+(require 'session)
+(add-hook 'after-init-hook 'session-initialize)
+(load "desktop")
+(desktop-save-mode)
+
+
+;加入标签页功能
+(require 'tabbar)
+(tabbar-mode)
+;(global-set-key (kbd "") 'tabbar-backward-group)
+;(global-set-key (kbd "") 'tabbar-forward-group)
+(global-set-key (kbd "C-`") 'tabbar-backward)
+(global-set-key (kbd "C-<tab>") 'tabbar-forward)
+
+
+;;Reference
+;;https://forum.ubuntu.org.cn/viewtopic.php?t=62416

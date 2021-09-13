@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Sep 14 07:06:08 2021
+;; Desktop file format version 208
+;; Emacs version 27.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24895 55648 514314 0) (desktop . "208") "anomymous@DESKTOP-8O0MM88" nil nil ((((minibuffer . t) (undecorated) (skip-taskbar) (font . "-outline-宋体-normal-normal-normal-*-36-*-*-*-p-*-iso8859-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "SystemWindowText") (background-color . "SystemWindow") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-focus-on-map) (no-accept-focus) (no-special-glyphs) (alpha) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 27) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 26) (scroll-bar-height . 26) (fullscreen . maximized) (z-group) (visibility . t) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (last-focus-update . t) (frameset--id . "B806-86F4-F8FC-2D67") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top) (width . 104) (left + -11) (top + -11)) ((min-height . 8) (min-width . 10) (min-height-ignore . 8) (min-width-ignore . 5) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 288) (min-pixel-width . 180) (min-pixel-height-ignore . 288) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 72) (min-pixel-width-safe . 36)) vc (pixel-width . 1920) (pixel-height . 944) (total-width . 106) (total-height . 26) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1920) (pixel-height . 476) (total-width . 106) (total-height . 13) (normal-height . 0.5) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 5834) (start . 5738)) (prev-buffers ("*scratch*" 1 1) ("*Messages*" 1 231) ("init.el" 5738 5846))) (leaf (last . t) (pixel-width . 1920) (pixel-height . 468) (total-width . 106) (total-height . 13) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 745) (start . 443)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/elpa/color-theme-20190220.1115/color-theme-autoloads.el" "~/.emacs.d/elpa/tabbar-20180726.1735/tabbar-autoloads.el" #("c:/Users/anomymous/.emacs.d/init.el" 0 35 (ivy-index 0))))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "c:/Users/anomymous/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode ivy-mode auto-complete-mode)
+  5834
+  '(5834 nil)
+  nil
+  nil
+  '((buffer-display-time 24895 55640 325334 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (5849 5834 5833 5598 5598))))
+

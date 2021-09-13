@@ -1,0 +1,29 @@
+;;; Automatically generated on Tue Sep 14 07:06:08 2021
+;;; Invoked by anomymous@DESKTOP-8O0MM88 using 27.2
+(setq-default kill-ring '(#("
+;加入color-theme插件
+(require 'color-theme)
+(color-theme-classic)
+" 0 1 (fontified t) 1 2 (fontified t face font-lock-comment-delimiter-face) 2 18 (fontified t face font-lock-comment-face) 18 19 (fontified t) 19 26 (fontified t face font-lock-keyword-face) 26 28 (fontified t) 28 39 (fontified t face font-lock-constant-face) 39 63 (fontified t)) "https://forum.ubuntu.org.cn/viewtopic.php?t=62416" ";加入color-theme插件
+(require 'color-theme)
+(color-theme-classic)" #(";设置tabbar字体
+(set-face-attribute 'tabbar-default-face
+		    nil :family \"Tahoma\")
+" 0 1 (face font-lock-comment-delimiter-face fontified t) 1 12 (face font-lock-comment-face fontified t) 12 63 (fontified t) 63 70 (face font-lock-builtin-face fontified t) 70 71 (fontified t) 71 79 (face font-lock-string-face fontified t) 79 81 (fontified t)) "tabbar-default-fac" ";加入标签功能
+(require 'tabbar)
+(tabbar-mode)
+;(global-set-key (kbd \"\") 'tabbar-backward-group)
+;(global-set-key (kbd \"\") 'tabbar-forward-group)
+(global-set-key (kbd \"C-`\") 'tabbar-backward)
+(global-set-key (kbd \"C-<tab>\") 'tabbar-forward)
+;设置tabbar字体
+(set-face-attribute 'tabbar-default-face
+		    nil :family \"Tahoma\")
+"))
+(setq-default session-file-alist '(("~/.emacs.d/init.el" 5834 5834 1 nil nil 5834 (overwrite-mode)) ("~/.emacs.d/elpa/color-theme-20190220.1115/color-theme-autoloads.el" 4869 nil 1 nil nil 4869 (overwrite-mode)) ("~/.emacs.d/elpa/tabbar-20180726.1735/tabbar-autoloads.el" 5375 nil 1 nil nil 5375 (overwrite-mode))))
+(setq-default file-name-history '("~/.emacs.d/elpa/color-theme-20190220.1115/color-theme-autoloads.el" "~/.emacs.d/elpa/tabbar-20180726.1735/tabbar-autoloads.el" #("c:/Users/anomymous/.emacs.d/init.el" 0 35 (ivy-index 0))))
+(setq-default command-history '((package-install 'color-theme nil) (package-install 'tabbar nil)))
+(setq-default counsel-M-x-history '(#("inst" 0 4 (ivy-index 1)) "package-install" #("install" 0 7 (ivy-index 0))))
+(setq-default counsel-git-grep-cmd-history '("git --no-pager grep -n --no-color -I -e \"%s\""))
+(setq-default ivy-history '(#("color-theme" 0 11 (ivy-index 6)) #("tabbar" 0 6 (ivy-index 1))))
+(setq-default occur-collect-regexp-history '("\\1"))
