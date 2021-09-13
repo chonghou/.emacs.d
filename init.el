@@ -51,9 +51,14 @@
               ("\C-c \C-k" . godoc)
               ("M-j" . godef-jump)))
 
+;;安装并配置go-autocomplete
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 (ac-config-default)
+;; 设置为t表示忽略大小写，设置为nil表示区分大小写
+;; 默认情况下为smart，表示如果输入的字符串不含有大写字符才会忽略大小写
+(setq ac-ignore-case t)
+
 
 
 (use-package helm-gtags

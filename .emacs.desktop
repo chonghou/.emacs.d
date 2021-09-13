@@ -2,30 +2,306 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Sep 14 07:06:08 2021
+;; Created Tue Sep 14 07:29:21 2021
 ;; Desktop file format version 208
 ;; Emacs version 27.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24895 55648 514314 0) (desktop . "208") "anomymous@DESKTOP-8O0MM88" nil nil ((((minibuffer . t) (undecorated) (skip-taskbar) (font . "-outline-宋体-normal-normal-normal-*-36-*-*-*-p-*-iso8859-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "SystemWindowText") (background-color . "SystemWindow") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-focus-on-map) (no-accept-focus) (no-special-glyphs) (alpha) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 27) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 26) (scroll-bar-height . 26) (fullscreen . maximized) (z-group) (visibility . t) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (last-focus-update . t) (frameset--id . "B806-86F4-F8FC-2D67") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top) (width . 104) (left + -11) (top + -11)) ((min-height . 8) (min-width . 10) (min-height-ignore . 8) (min-width-ignore . 5) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 288) (min-pixel-width . 180) (min-pixel-height-ignore . 288) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 72) (min-pixel-width-safe . 36)) vc (pixel-width . 1920) (pixel-height . 944) (total-width . 106) (total-height . 26) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1920) (pixel-height . 476) (total-width . 106) (total-height . 13) (normal-height . 0.5) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 5834) (start . 5738)) (prev-buffers ("*scratch*" 1 1) ("*Messages*" 1 231) ("init.el" 5738 5846))) (leaf (last . t) (pixel-width . 1920) (pixel-height . 468) (total-width . 106) (total-height . 13) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 745) (start . 443)))))])
+(setq desktop-saved-frameset [frameset 1 (24895 57041 221722 0) (desktop . "208") "anomymous@DESKTOP-8O0MM88" nil nil ((((minibuffer . t) (undecorated) (skip-taskbar) (font . "-outline-宋体-normal-normal-normal-*-36-*-*-*-p-*-iso8859-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "SystemWindowText") (background-color . "SystemWindow") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-focus-on-map) (no-accept-focus) (no-special-glyphs) (alpha) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 27) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 26) (scroll-bar-height . 26) (fullscreen . maximized) (z-group) (visibility . t) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (last-focus-update . t) (frameset--id . "B806-86F4-F8FC-2D67") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top) (width . 104) (left + -11) (top + -11)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 5) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 144) (min-pixel-width . 180) (min-pixel-height-ignore . 144) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 36) (min-pixel-width-safe . 36)) leaf (pixel-width . 1920) (pixel-height . 944) (total-width . 106) (total-height . 26) (normal-height . 1.0) (normal-width . 1.0) (buffer "user.go<client>" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("tor" 1 301) ("config" 1 251) ("process<client>" 1 260) ("user.go<client>" 1 1) ("model<client>" 1 254) ("logger.go" 442 442) ("logger" 1 255) ("client" 1 251) ("utils.go" 1114 1354) ("message" 1 259) ("common" 1 251) ("userProcess.go" 1541 1849) ("process<server>" 1 539) ("userDao.go" 1832 2291) ("error.go" 1 128) ("user.go<server>" 1 1) ("clientConn.go" 343 343) ("model<server>" 1 257) ("server" 1 252) ("go-chat" 1 527) ("openurl_windows.go" 1 375) ("crawl" 1 297) (".gitignore" 1 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring nil)
+(setq regexp-search-ring '("func" "fun" "auto-complete"))
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/elpa/color-theme-20190220.1115/color-theme-autoloads.el" "~/.emacs.d/elpa/tabbar-20180726.1735/tabbar-autoloads.el" #("c:/Users/anomymous/.emacs.d/init.el" 0 35 (ivy-index 0))))
+(setq file-name-history '("~/project/tool/pkg/api/fs.go" "~/project/tool/pkg/tool.go" "~/project/tool/pkg/tor/tor.go" #("c:/Users/anomymous/project/tool/pkg/tor/" 0 40 (ivy-index 11)) "~/project/tool/pkg/go-chat/config/config.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/config/" 0 51 (ivy-index 4)) #("c:/Users/anomymous/project/tool/pkg/go-chat/client/process/serverProcess.go" 0 75 (ivy-index 3)) "~/project/tool/pkg/go-chat/client/process/messageProcess.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/client/process/" 0 59 (ivy-index 4)) "~/project/tool/pkg/go-chat/client/model/user.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/client/model/" 0 57 (ivy-index 3)) "~/project/tool/pkg/go-chat/client/logger/logger.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/client/" 0 51 (ivy-index 2)) "~/project/tool/pkg/go-chat/common/message/message.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/common/" 0 51 (ivy-index 3)) #("c:/Users/anomymous/project/tool/pkg/go-chat/server/utils/" 0 57 (ivy-index 0)) "~/project/tool/pkg/go-chat/server/utils/utils.go" "~/project/tool/pkg/go-chat/server/process/userProcess.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/server/process/" 0 59 (ivy-index 3)) "~/project/tool/pkg/go-chat/server/model/error.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/server/model/userDao.go" 0 67 (ivy-index 5)) #("c:/Users/anomymous/project/tool/pkg/go-chat/server/model/user.go" 0 64 (ivy-index 4)) "~/project/tool/pkg/go-chat/server/model/clientConn.go" #("c:/Users/anomymous/project/tool/pkg/go-chat/" 0 44 (ivy-index 0)) "~/project/tool/pkg/log/log.go" "~/project/tool/pkg/crawl/example.go" #("c:/Users/anomymous/project/tool/pkg/crawl/" 0 42 (ivy-index 3)) #("c:/Users/anomymous/project/tool/pkg/openurl_windows.go" 0 54 (ivy-index 2)) #("c:/Users/anomymous/.emacs.d/Makefile" 0 36 (ivy-index 0)) #("c:/Users/anomymous/.emacs.d/.session" 0 36 (ivy-index 0)) #("c:/Users/anomymous/.emacs.d/.se]" 0 32 (ivy-index 0)) #("c:/Users/anomymous/.emacs.d/.gitignore" 0 38 (ivy-index 0)) "~/.emacs.d/elpa/color-theme-20190220.1115/color-theme-autoloads.el" "~/.emacs.d/elpa/tabbar-20180726.1735/tabbar-autoloads.el" #("c:/Users/anomymous/.emacs.d/init.el" 0 35 (ivy-index 0))))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "c:/Users/anomymous/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(eldoc-mode override-global-mode ivy-mode auto-complete-mode)
-  5834
-  '(5834 nil)
+  "c:/Users/anomymous/project/tool/pkg/go-chat/client/model/user.go"
+  "user.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  1
+  '(nil nil)
   nil
   nil
-  '((buffer-display-time 24895 55640 325334 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (5849 5834 5833 5598 5598))))
+  '((indent-tabs-mode . t) (buffer-display-time 24895 57035 608198 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "tor"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  301
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/tor/")
+  '((buffer-display-time 24895 56916 663401 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "config"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  251
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/config/")
+  '((buffer-display-time 24895 56895 132647 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "process"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  260
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/client/process/")
+  '((buffer-display-time 24895 56839 825457 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "model"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  254
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/client/model/")
+  '((buffer-display-time 24895 56812 84149 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/client/logger/logger.go"
+  "logger.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  442
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56804 683908 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "logger"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  255
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/client/logger/")
+  '((buffer-display-time 24895 56797 693364 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "client"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  251
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/client/")
+  '((buffer-display-time 24895 56796 136394 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/utils/utils.go"
+  "utils.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  1354
+  '(1354 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56791 509594 0) (buffer-file-coding-system . utf-8-unix) (fill-column . 0))
+  '((mark-ring (14 15))))
+
+(desktop-create-buffer 208
+  nil
+  "message"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  259
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/common/message/")
+  '((buffer-display-time 24895 56783 294623 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "common"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  251
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/common/")
+  '((buffer-display-time 24895 56782 282610 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/process/userProcess.go"
+  "userProcess.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  1849
+  '(2389 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56697 807274 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1060 1628 223 1059 1627 2389 474))))
+
+(desktop-create-buffer 208
+  nil
+  "process"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  539
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/server/process/")
+  '((buffer-display-time 24895 56620 994322 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/model/userDao.go"
+  "userDao.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  2291
+  '(945 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56616 755578 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2469 693))))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/model/error.go"
+  "error.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  128
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56572 277636 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/model/user.go"
+  "user.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56518 465767 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/go-chat/server/model/clientConn.go"
+  "clientConn.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  343
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56514 985994 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "model"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  257
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/server/model/")
+  '((buffer-display-time 24895 56505 85653 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "server"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  252
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/server/")
+  '((buffer-display-time 24895 56504 637300 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "go-chat"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  527
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/")
+  '((buffer-display-time 24895 56501 998615 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/project/tool/pkg/openurl_windows.go"
+  "openurl_windows.go"
+  'go-mode
+  '(override-global-mode ivy-mode auto-complete-mode helm-gtags-mode)
+  375
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24895 56497 723372 0) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "crawl"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  297
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/crawl/")
+  '((buffer-display-time 24895 56302 977872 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "c:/Users/anomymous/.emacs.d/.gitignore"
+  ".gitignore"
+  'fundamental-mode
+  '(override-global-mode ivy-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24895 56482 943315 0) (buffer-file-coding-system . utf-8-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "utils"
+  'dired-mode
+  '(override-global-mode ivy-mode helm-gtags-mode)
+  257
+  '(nil nil)
+  t
+  '("c:/Users/anomymous/project/tool/pkg/go-chat/server/utils/")
+  '((buffer-display-time 24895 57035 594060 0))
+  '((mark-ring nil)))
 

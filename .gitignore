@@ -1,2 +1,7 @@
 .desktop
 .desktop.lock
+auto-save-list/*
+.emacs.desktop.lock
+.emacs.desktop
+init.el~
+auto-save-list/*
