@@ -174,7 +174,7 @@
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 (tool-bar-mode nil);去掉那个大大的工具栏
-(scroll-bar-mode nil);去掉滚动条
+(set-scroll-bar-mode nil);去掉滚动条
 ;(mouse-avoidance-mode 'animate);光标靠近鼠标指针时，让鼠标指针自动让开
 (setq mouse-yank-at-point t);支持中键粘贴
 (transient-mark-mode t);允许临时设置标记
