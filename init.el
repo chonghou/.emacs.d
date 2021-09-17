@@ -82,17 +82,23 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes '(atom-one-dark))
+ '(custom-safe-themes
+   '("5a04c3d580e08f5fc8b3ead2ed66e2f0e5d93643542eec414f0836b971806ba9" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" "5b7c31eb904d50c470ce264318f41b3bbc85545e4359e6b7d48ee88a892b1915" default))
  '(package-selected-packages
-   '(color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
- '(session-use-package t nil (session)))
+   '(idea-darkula-theme atom-one-dark-theme atom-dark-theme color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
+ '(session-use-package t nil (session))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+(setq inhibit-startup-message t);关闭启动画面
+(global-hl-line-mode 1);highlight当前行
 (use-package dumb-jump
   :bind (("M-g o" . dumb-jump-go-other-window)
          ("M-g j" . dumb-jump-go)
