@@ -82,12 +82,23 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(atom-one-dark))
+ '(ansi-color-names-vector
+   ["#21252B" "#E06C75" "#98C379" "#E5C07B" "#61AFEF" "#C678DD" "#56B6C2" "#ABB2BF"])
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    '("5a04c3d580e08f5fc8b3ead2ed66e2f0e5d93643542eec414f0836b971806ba9" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" "5b7c31eb904d50c470ce264318f41b3bbc85545e4359e6b7d48ee88a892b1915" default))
+ '(fci-rule-color "#3E4451")
  '(package-selected-packages
    '(idea-darkula-theme atom-one-dark-theme atom-dark-theme color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
  '(session-use-package t nil (session))
+ '(tetris-x-colors
+   [[229 192 123]
+    [97 175 239]
+    [209 154 102]
+    [224 108 117]
+    [152 195 121]
+    [198 120 221]
+    [86 182 194]])
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -180,7 +191,12 @@
 (transient-mark-mode t);允许临时设置标记
 (setq x-select-enable-clipboard t);支持emacs和外部程序的粘贴
 (setq frame-title-format '("" buffer-file-name "@emacs" ));在标题栏显示buffer名称
-(setq default-fill-column 80);默认显示 80列就换行 
+(setq default-fill-column 70);默认显示 80列就换行 
+(add-hook 'text-mode-hook '(lambda ()
+                             (auto-fill-mode 1)))
+
+(add-hook 'fundamental-mode-hook '(lambda ()
+                             (auto-fill-mode 1)))
 
 
 ;鼠标滚轮，默认的滚动太快，这里改为3行
@@ -210,3 +226,4 @@
 
 ;;Reference
 ;;https://forum.ubuntu.org.cn/viewtopic.php?t=62416
+(put 'downcase-region 'disabled nil)
