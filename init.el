@@ -4,8 +4,6 @@
 ;; and `package-pinned-packages`. Most users will not need or want to do this.
 ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
-
-
 (require 'use-package)
 (use-package ivy
   :ensure t
@@ -27,7 +25,6 @@
   :ensure t
   :bind (("M-x" . counsel-M-x)
 	 ("\C-x \C-f" . counsel-find-file)))
-
 ;;
 ;; swiper
 ;;
@@ -59,8 +56,6 @@
 ;; 默认情况下为smart，表示如果输入的字符串不含有大写字符才会忽略大小写
 (setq ac-ignore-case t)
 
-
-
 (use-package helm-gtags
   :config
   (setq helm-gtags-ignore-case t
@@ -76,40 +71,36 @@
                                         ;("M-," . helm-gtags-pop-stack)
               ("C-c <" . helm-gtags-previous-history)
               ("C-c >" . helm-gtags-next-history))
-  :hook ((dired-mode eshell-mode c-mode c++-mode asm-mode go-mode) . helm-gtags-mode))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#21252B" "#E06C75" "#98C379" "#E5C07B" "#61AFEF" "#C678DD" "#56B6C2" "#ABB2BF"])
- '(custom-enabled-themes nil)
- '(custom-safe-themes
-   '("5a04c3d580e08f5fc8b3ead2ed66e2f0e5d93643542eec414f0836b971806ba9" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" "5b7c31eb904d50c470ce264318f41b3bbc85545e4359e6b7d48ee88a892b1915" default))
- '(fci-rule-color "#3E4451")
- '(package-selected-packages
-   '(idea-darkula-theme atom-one-dark-theme atom-dark-theme color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
- '(session-use-package t nil (session))
- '(tetris-x-colors
-   [[229 192 123]
-    [97 175 239]
-    [209 154 102]
-    [224 108 117]
-    [152 195 121]
-    [198 120 221]
-    [86 182 194]])
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+  :hook ((dired-mode eshell-mode c-mode c++-mode asm-mode go-mode)
+	 . helm-gtags-mode))
+
+
+
+
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(tool-bar-mode nil);去掉那个大大的工具栏
+(set-scroll-bar-mode nil);去掉滚动条
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 (setq inhibit-startup-message t);关闭启动画面
 (global-hl-line-mode 1);highlight当前行
+(set-frame-font "Simsun 16")
+;加入标签页功能
+(require 'tabbar)
+(tabbar-mode)
+;(global-set-key (kbd "") 'tabbar-backward-group)
+;(global-set-key (kbd "") 'tabbar-forward-group)
+(global-set-key (kbd "C-`") 'tabbar-backward)
+(global-set-key (kbd "C-<tab>") 'tabbar-forward)
+;解决emacs shell 乱码
+(setq ansi-color-for-comint-mode t)
+(customize-group 'ansi-colors)
+(kill-this-buffer);关闭customize窗口
+
+
+
+
 (use-package dumb-jump
   :bind (("M-g o" . dumb-jump-go-other-window)
          ("M-g j" . dumb-jump-go)
@@ -127,9 +118,7 @@
 (global-set-key (kbd "M-,") 'dumb-jump-go)
 (global-set-key (kbd "M-.") 'dumb-jump-back)
 
-
 (setq make-backup-files nil)
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;org-mode
@@ -159,19 +148,41 @@
   :hook (org-mode . org-bullets-mode))
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#21252B" "#E06C75" "#98C379" "#E5C07B" "#61AFEF" "#C678DD" "#56B6C2" "#ABB2BF"])
+ '(custom-enabled-themes '(idea-darkula))
+ '(custom-safe-themes
+   '("5a04c3d580e08f5fc8b3ead2ed66e2f0e5d93643542eec414f0836b971806ba9" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" "5b7c31eb904d50c470ce264318f41b3bbc85545e4359e6b7d48ee88a892b1915" default))
+ '(fci-rule-color "#3E4451")
+ '(package-selected-packages
+   '(org-bullets python-mode idea-darkula-theme atom-one-dark-theme atom-dark-theme color-theme tabbar dumb-jump helm-gtags use-package go-mode go-autocomplete counsel company))
+ '(session-use-package t nil (session))
+ '(tetris-x-colors
+   [[229 192 123]
+    [97 175 239]
+    [209 154 102]
+    [224 108 117]
+    [152 195 121]
+    [198 120 221]
+    [86 182 194]])
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+
 (defun now ()
   "在当前buffer中插入时间"
   (interactive)
   ( insert (current-time-string)))
-
-(set-frame-font "Simsun 18")
-
-
-
-;解决emacs shell 乱码
-(setq ansi-color-for-comint-mode t)
-(customize-group 'ansi-colors)
-(kill-this-buffer);关闭customize窗口
 
 (setq visible-bell t);关闭出错时的提示声
 (setq make-backup-files nil);不产生备份文件
@@ -182,10 +193,7 @@
 (column-number-mode t);显示列号
 (show-paren-mode t);显示括号匹配
 (display-time-mode 1);显示时间，格式如下
-(setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
-(tool-bar-mode nil);去掉那个大大的工具栏
-(set-scroll-bar-mode nil);去掉滚动条
+
 ;(mouse-avoidance-mode 'animate);光标靠近鼠标指针时，让鼠标指针自动让开
 (setq mouse-yank-at-point t);支持中键粘贴
 (transient-mark-mode t);允许临时设置标记
@@ -198,15 +206,11 @@
 (add-hook 'fundamental-mode-hook '(lambda ()
                              (auto-fill-mode 1)))
 
-
 ;鼠标滚轮，默认的滚动太快，这里改为3行
 (defun up-slightly () (interactive) (scroll-up 3))
 (defun down-slightly () (interactive) (scroll-down 3))
 (global-set-key [mouse-4] 'down-slightly)
 (global-set-key [mouse-5] 'up-slightly)
-
-
-
 
 ;加入会话功能
 (require 'session)
@@ -214,16 +218,7 @@
 (load "desktop")
 (desktop-save-mode)
 
-
-;加入标签页功能
-(require 'tabbar)
-(tabbar-mode)
-;(global-set-key (kbd "") 'tabbar-backward-group)
-;(global-set-key (kbd "") 'tabbar-forward-group)
-(global-set-key (kbd "C-`") 'tabbar-backward)
-(global-set-key (kbd "C-<tab>") 'tabbar-forward)
-
-
 ;;Reference
 ;;https://forum.ubuntu.org.cn/viewtopic.php?t=62416
 (put 'downcase-region 'disabled nil)
+(global-visual-line-mode 1)
