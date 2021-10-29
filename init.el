@@ -185,6 +185,7 @@
   ( insert (current-time-string)))
 
 (setq visible-bell t);关闭出错时的提示声
+(setq ring-bell-function 'ignore)
 (setq make-backup-files nil);不产生备份文件
 (setq default-major-mode 'text-mode);一打开就起用 text 模式
 (global-font-lock-mode t);语法高亮
@@ -199,7 +200,8 @@
 (transient-mark-mode t);允许临时设置标记
 (setq x-select-enable-clipboard t);支持emacs和外部程序的粘贴
 (setq frame-title-format '("" buffer-file-name "@emacs" ));在标题栏显示buffer名称
-(setq default-fill-column 70);默认显示 80列就换行 
+;(setq default-fill-column 70);默认显示 80列就换行
+(setq-default fill-column 80)
 (add-hook 'text-mode-hook '(lambda ()
                              (auto-fill-mode 1)))
 
@@ -222,3 +224,28 @@
 ;;https://forum.ubuntu.org.cn/viewtopic.php?t=62416
 (put 'downcase-region 'disabled nil)
 (global-visual-line-mode 1)
+
+(setq  initial-scratch-message nil)
+
+(setq inhibit-startup-screen t)
+(setq kill-ring-max 200)
+(setq kill-do-not-save-duplicates t);不向kill-ring中加入重复内容
+
+(setq-default indent-tabs-mode nil);用空格代替tab来进行代码的缩进
+
+(setq kill-whole-line t);在行首 C-k 时，同时删除末尾换行符
+(setq large-file-warning-threshold nil);打开大文件时不必警告
+
+(setq recentf-max-saved-items 500)
+
+;即便重新打开emacs 也要保存emacs 的某些变量 ，比如kill-ring
+(setq-default savehist-additional-variables
+      '(kill-ring))
+(savehist-mode 1)
+
+;记住上次打开某文件时光标所在的位置
+;(setq-default save-place t)
+;(require 'saveplace)
+;(save-place-mode 1)     
+
+;https://jixiuf.github.io/blog/00006-emacs-common-setup.html/
