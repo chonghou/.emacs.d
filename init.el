@@ -249,3 +249,9 @@
 ;(save-place-mode 1)     
 
 ;https://jixiuf.github.io/blog/00006-emacs-common-setup.html/
+
+
+(setq explicit-shell-file-name
+      "C:/Program Files/Git/bin/bash.exe")
+(setq shell-file-name explicit-shell-file-name)
+(add-to-list 'exec-path "C:/Program Files/Git/bin")
